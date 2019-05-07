@@ -1,0 +1,53 @@
+body{
+         background-color: purple;
+     }
+     .col-8{
+         background-color:#32465a;
+         color: white;
+     }
+     .fa-envelope{
+         color: purple;
+     }
+
+     .user{
+         text-align: center;
+     }
+     .col-2 {
+         background-color: #E6EAEA;
+     }
+     h1{
+         text-decoration: underline;
+
+     }
+     kbd{
+         background-color: purple;
+     }
+
+     .fa-user{
+       color: purple;
+     }
+     .far{
+       background-color: purple;
+     }
+
+     #messageInput{
+       border: 2px solid white;
+       border-radius: 8px;
+     }
+     #username{
+       text-align: center;
+     }
+     #messages,#channelList,#inbox {
+overflow: auto ;
+}
+#channelList li:hover,#inbox li:hover,kbd:hover, .text-danger:hover {
+cursor: pointer;
+}
+li {
+list-style-type: none;
+}
+
+.submit, #submit{
+  color: white;
+  background-color: purple;
+}
