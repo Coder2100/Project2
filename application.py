@@ -7,7 +7,7 @@ app.config["SECRET_KEY"] = os.getenv("SECRET_KEY")
 socketio = SocketIO(app)
 # global variables
 #users dictionary
-usersList={}
+users={}
 #setting up limit for messages
 maxMessages=100
 #creating empty channels dictionary
@@ -53,10 +53,10 @@ def new_channel(data):
 def new_username(data):
     username=""
     warning=""
-    if data['username'] in usersList:
+    if data['username'] in users:
         warning="The username taken! create unique one."
     else:
-        usersList[data['username']]=request.sid
+        users[data['username']]=request.sid
         username=data["username"]
     emit("add username",{"username":username,'warning':warning})
 #join_room() and leave_room() functions when moving between channels
