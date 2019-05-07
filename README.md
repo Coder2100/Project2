@@ -25,3 +25,18 @@ This is the main jquery and js, sockets code to make the app works
 
 link to the youtube demo
 https://youtu.be/nqt4AZe55BI
+
+how to test the run the app
+
+
+1. clone the repo and cd into it.
+
+
+2. within Project2 dir run the following command.(1) export FLASK_APP=application.py in mac, its set 
+
+
+FLASK_APP=application.py in windows. (2)flask run --no-reload.
+
+
+
+Play round the cod as you please.
